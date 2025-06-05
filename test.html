@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Feature Scroll</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="hidden">
+
+    <nav>
+        <ul id="nav-links">
+        <li><a href="#twelveStories">Twelve Stories</a></li>
+        <li><a href="#buytheBook">Buy the Book</a></li>
+        <li><a href="#aboutAuthor">About the Author</a></li>
+        <li><a href="#bookClubResources">Book Club Resources</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hamburger icon fixed to screen -->
+<div class="hamburger hidden" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+
+<div id="animation-section" class="scene">
+    <div class="sun">
+      <img src="Sun-vector.png" alt="Sun" class="sun-img" />
+    </div>
+    <div class="fish">
+      <img src="fish-rocket@2x.png" alt="Fish" class="fish-img" />
+    </div>
+    <div class="cloud">
+      <img src="clouds-vector@2x.png" alt="Cloud" class="cloud-img" />
+    </div>
+    <div class="waves">
+      <img src="waves.png" alt="Waves" class="wave-img" />
+    </div>
+</div>
+<main>
+
+  <section id="twelveStories" class="section-two book-feature first">
+    <div class="book-quote">
+      <p>WE'VE IMAGINED AND REIMAGINED THE WORLD.<br />AND WE FORGOT WE HAVE TO LIVE IN IT.</p>
+    </div>
+    <div class="book-content">
+      <div class="book-cover">
+        <img src="sushi-on-mars-front.jpg" alt="Sushi on Mars book cover" />
+      </div>
+      <div class="book-price">
+        <div class="price-badge">
+          <span>BUY THE<br />HARDCOVER WITH<br />DUST JACKET</span>
+          <strong>$20.99</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-two book-feature second">
+    <div class="book-quote">
+      <p>WE'VE IMAGINED AND REIMAGINED THE WORLD.<br />AND WE FORGOT WE HAVE TO LIVE IN IT.</p>
+    </div>
+    <div class="book-content">
+      <div class="book-cover">
+        <img src="sushi-on-mars-back.jpg" alt="Sushi on Mars book cover" />
+      </div>
+      <div class="book-price">
+        <div class="price-badge">
+          <span>BUY THE<br />HARDCOVER WITH<br />DUST JACKET</span>
+          <strong>$20.99</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-two book-feature third">
+    <div class="book-quote">
+      <p>THE CURE OF US</p>
+    </div>
+    <div class="slide_section">
+      <div class="slide">
+        <div class="slide_item"><img src="imgs/architecture-greed.png" /><div class="description"><p>Every citizen carried their worth on their skin.<br>Kindness here was a literal tender.</p></div></div>
+        <div class="slide_item"><img src="imgs/cure-of-us.png" /><div class="description"><p>With every turn of a page...the ink would bleed into reality.</p></div></div>
+        <div class="slide_item"><img src="imgs/kindness-currency.png" /><div class="description"><p>What the soil knows, the wine reveals.</p></div></div>
+        <!-- Add more slide items as needed -->
+      </div>
+    </div>
+  </section>
+
+  <section id="aboutAuthor" class="section-two book-feature fourth">
+    <div class="container">
+        <div class="left-column">
+        <div class="author-image"></div>
+        <div class="author-name">PAUL VINOD</div>
+        <div class="divider"></div>
+        <div class="author-bio">
+            Paul Vinod is an advertising Creative Director/Copywriter who’s walked the streets of NYC for over 20 years, and learned about creating stories on Madison Ave. He currently lives in Newtown, Pa with his wife Anne Paul - children’s book author and designer. They run a creative boutique and strategy agency.
+        </div>
+        </div>
+        <div class="right-column">
+        <div class="book-quote">
+            <p>AUTHOR’S PREFACE</p>
+        </div>    
+        <!-- <div class="preface-title book-quote">AUTHOR’S PREFACE</div> -->
+        <div class="preface-text">
+            For years, my words served a paycheck. They were crafted
+            not to linger, but to persuade. Advertising, they call it.
+            The art of the fleeting phrase, the economy of language—
+            Why say ‘lackadaisical’ when ‘lazy’ will do?
+            Why ornament when a tagline is enough?
+            Long form writing had no place in my world.
+            And yet, this book—this unwieldy thing—arrived.
+            The stories within it are relics of my days in advertising.
+            The ones that never made it. The ideas too odd, too unruly to be shaped into commerce.
+            Still.
+            They are what I have felt in people and wished for them.
+            And in their own way, they are human maps of where we are
+            and where we could be.
+            There is no single genre to contain them —
+            modern folk tales and science fiction, thrillers and legal drama,
+            a Western noir even.
+            They formed freely like Playdoh, pressed and shaped by nothing but curiosity.
+            I did not know I needed to tell them until the telling began. And
+            within them, tucked between the lines, are things that belong
+            in my own journey—my contradictions, my wanderings. There
+            are no flawless heroes here, only people, broken and whole in
+            the same breath. Fearful and fearless, seeking and found, made and remade.
+            We are never just one thing.
+            In these pages, there are questions we don’t want to answer,
+            questions often unasked, unvoiced. None of it was deliberate;
+            all of it is true. Ink is naked in that way. It reveals what we do not always mean to show.
+            These stories breathe. But they suck out the oxygen from our assumptions.
+            Read them in order or at random. One at a time or all at once.
+            They are yours now.
+            - Paul
+        </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="buytheBook" class="section-two book-feature fifth">
+    <div class="book-quote">
+        <p></p>
+    </div>
+    <div class="book-content">
+      <div class="book-cover" style="border: none !important;">
+        <img src="buy-the-book.jpg"  alt="buy-the-book" />
+      </div>
+      <div class="circle-container">
+        <a href="#" class="circle-link"><span>Buy Kindle Version</span><strong>Amazon</strong></a>
+        <a href="#" class="circle-link"><span>Buy ePub Version</span><strong>Apple Books</strong></a>
+        <a href="#" class="circle-link"><span>Buy Printed Version</span><strong>Sushionmars.com</strong></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="bookClubResources" class="section-two book-feature sixth">
+    <div class="book-quote">
+        <p>AN INTERACTIVE CHATBOT EXPERIENCE FOR BOOK CLUBS</p>
+    </div>
+    <!-- <h2>AN INTERACTIVE CHATBOT EXPERIENCE FOR BOOK CLUBS</h2> -->
+    <p class="description book-quote">
+        Buy five or more books and unlock a chatbot experience with the characters in the story.
+        Ask questions. Debate with the character. Maybe find answers?
+    </p>
+
+    <div class="circle-grid">
+        <div class="circle-item">
+        <img src="imgs/prophetic.png" alt="Prophetic Post" />
+        <div class="circle-label">
+            <span class="title">The Prophetic Post.</span>
+            <span class="chat">Chat with <span class="red">Maya Kovich.</span></span>
+        </div>
+        </div>
+
+        <div class="circle-item">
+        <img src="imgs/human-override.png" alt="The Human Override" />
+        <div class="circle-label">
+            <span class="title">The Human Override.</span>
+            <span class="chat">Chat with <span class="red">Maxwell Stone.</span></span>
+        </div>
+        </div>
+
+        <div class="circle-item">
+        <img src="imgs/kindness-currency.png" alt="Kindness Card" />
+        <div class="circle-label">
+            <span class="title">Kindness Card.</span>
+            <span class="chat">Chat with <span class="red">August Voss.</span></span>
+        </div>
+        </div>
+
+        <div class="circle-item">
+        <img src="imgs/sushi-on-mars.png" alt="Sushi on Mars" />
+        <div class="circle-label">
+            <span class="title">Sushi on Mars.</span>
+            <span class="chat"><span class="blue">Chat with </span><span class="red">Shigeru Takashiro.</span></span>
+        </div>
+        </div>
+
+        <div class="circle-item">
+        <img src="imgs/cure-of-us.png" alt="The Cure of Us" />
+        <div class="circle-label">
+            <span class="title">The Cure of Us.</span>
+            <span class="chat">Chat with <span class="red">Julian Rhodes.</span></span>
+        </div>
+        </div>
+
+        <div class="circle-item">
+        <img src="imgs/deathball.png" alt="Death Ball" />
+        <div class="circle-label">
+            <span class="title">Death Ball.</span>
+            <span class="chat">Chat with <span class="red">Marshall Gray.</span></span>
+        </div>
+        </div>
+    </div>
+
+    <div class="sign-in">
+        <label for="code">Book Club Sign-In Code</label>
+        <input type="text" id="code" placeholder="Enter code here" />
+    </div>
+
+    <div class="circle-container"></div>
+    <div class="circle-container"></div>
+  </section>
+
+  <footer class="hidden">
+ 
+</footer>
+</main>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Observer.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js"></script>
+
+<script>
+
+// function toggleMenu() {
+//     const navLinks = document.getElementById('nav-links');
+//     navLinks.classList.toggle('show');
+//   }
+    gsap.registerPlugin(SplitText, ScrollTrigger, Observer);
+
+    // ✅ Setup: Sections, Images, and Quotes
+const sections = gsap.utils.toArray(".section-two.book-feature"),
+      images = gsap.utils.toArray(".book-cover img"),
+      headings = gsap.utils.toArray(".book-quote p"),
+      wrapIndex = gsap.utils.wrap(0, sections.length);
+
+let currentIndex = -1,
+    animating = false,
+    currentSplit = null;
+
+// Hide all sections initially
+gsap.set(sections, { autoAlpha: 0, zIndex: 0 });
+gsap.set(sections[0], { autoAlpha: 1, zIndex: 1 });
+
+// 🌊 Wave Animation
+// Infinite bobbing effect
+gsap.to(".wave-img", {
+      y: 200,
+      ease: "none",
+      scrollTrigger: {
+        trigger: "body",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: true
+      }
+    });
+
+    gsap.to(".wave-img", {
+      y: "+=10",
+      duration: 2,
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut"
+    });
+
+    // ☀️ Sun rise
+    gsap.fromTo(".sun-img",
+      { y: 100, opacity: 0 },
+      {
+        y: -555,
+        opacity: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: "body",
+          start: "0% top",
+          end: "30% top",
+          scrub: true
+        }
+      });
+
+    // 🌊 Waves fade out later
+    gsap.to(".wave-img", {
+      y: -150,
+      opacity: 0,
+      ease: "power1.out",
+      scrollTrigger: {
+        trigger: "body",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: true,
+        onLeave: () =>{  
+        gsap.to("#animation-section", { autoAlpha: 0, duration: 0.3 })
+      },
+      }
+    });
+
+    // 🐟 Fish appears after sun
+    gsap.fromTo(".fish-img",
+      { y: 300, opacity: 0 },
+      {
+        y: -250,
+        opacity: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: "body",
+          start: "30% top",
+          end: "60% top",
+          scrub: true
+        }
+      });
+
+    // ☁️ Cloud appears last
+    gsap.fromTo(".cloud-img",
+      { y: 400, opacity: 0 },
+      {
+        y: -200,
+        opacity: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: "body",
+          start: "30% top",
+          end: "60% top",
+          scrub: true
+        }
+      });
+
+// ✨ ScrollTrigger to hide/show animation section
+ScrollTrigger.create({
+  trigger: "#animation-section",
+  start: "top top",
+  end: "bottom top",
+  onEnter: () => {
+    gsap.set("#animation-section", { autoAlpha: 1 });
+    gsap.set(sections, { autoAlpha: 0 });
+    hideUI(true);
+    observer.disable();
+  },
+  onLeave: () => {
+    gsap.to("#animation-section", { autoAlpha: 0, duration: 0.3 });
+    gsap.to(sections, {
+      autoAlpha: 1,
+      duration: 0.5,
+      onComplete: () => {
+        observer.enable();
+        gotoSection(0, 1);
+      },
+    });
+    showUI();
+  },
+  onEnterBack: () => {
+    gsap.set("#animation-section", { autoAlpha: 1 });
+    gsap.set(sections, { autoAlpha: 0 });
+    hideUI(true);
+    observer.disable();
+  },
+  onLeaveBack: () => {
+    gsap.to("#animation-section", { autoAlpha: 0, duration: 0.3 });
+    gsap.to(sections, {
+      autoAlpha: 1,
+      duration: 0.5,
+      onComplete: () => observer.enable(),
+    });
+    showUI();
+  },
+});
+
+// Parallax on scroll
+images.forEach((img, i) => {
+  gsap.to(img, {
+    yPercent: 20,
+    ease: "none",
+    scrollTrigger: {
+      trigger: sections[i],
+      start: "top bottom",
+      end: "bottom top",
+      scrub: true
+    }
+  });
+});
+
+// 👇 Observer for scroll/swipe navigation
+const observer = Observer.create({
+  type: "wheel,touch,pointer",
+  wheelSpeed: -1,
+  tolerance: 10,
+  preventDefault: true,
+  onDown: () => gotoSection(currentIndex - 1, -1),
+  onUp: () => gotoSection(currentIndex + 1, 1)
+});
+observer.disable();
+
+// 🚀 Goto Section Logic
+gotoSection(0, 1);
+function gotoSection(index, direction) {
+  if (animating || index === currentIndex) return;
+  index = wrapIndex(index);
+  animating = true;
+  const dFactor = direction === -1 ? -1 : 1;
+
+  if (currentSplit) {
+    currentSplit.revert();
+    currentSplit = null;
+  }
+
+  const tl = gsap.timeline({
+    defaults: { duration: 1.25, ease: "power1.inOut" },
+    onComplete: () => (animating = false)
+  });
+
+  if (currentIndex >= 0) {
+    tl.to(images[currentIndex], { yPercent: -15 * dFactor }, 0);
+    tl.to(sections[currentIndex], { autoAlpha: 0 }, 0.3);
+  }
+
+  const section = sections[index];
+  const image = images[index];
+  const heading = headings[index];
+  const price = section.querySelector(".book-price");
+
+  gsap.set(section, { autoAlpha: 1, zIndex: 1 });
+  currentSplit = new SplitText(heading, {
+    type: "chars",
+    linesClass: "clip-text",
+  });
+
+  tl.fromTo(image, { yPercent: 50 * dFactor, autoAlpha: 0 }, { yPercent: 0, autoAlpha: 1 }, 0);
+  tl.fromTo(currentSplit.chars, {
+    autoAlpha: 0,
+    yPercent: 100 * dFactor
+  }, {
+    autoAlpha: 1,
+    yPercent: 0,
+    duration: 1.2,
+    ease: "power2.out",
+    stagger: { each: 0.03, from: "start" },
+  }, 0.1);
+
+  if (price) {
+    tl.fromTo(price, { y: 80, autoAlpha: 0 }, { y: 0, autoAlpha: 1 }, "-=0.6");
+  }
+
+  currentIndex = index;
+}
+
+// ✅ UI toggle functions
+function hideUI(hide = true) {
+  document.querySelector("main").style.height = hide ? "100vh" : "";
+  document.querySelector("header")?.classList.toggle("hidden", hide);
+  document.querySelector("footer")?.classList.toggle("hidden", hide);
+  document.querySelector(".hamburger")?.classList.toggle("hidden", hide);
+}
+function showUI() {
+  hideUI(false);
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+
+      const index = sections.indexOf(target);
+      if (index !== -1) {
+        setTimeout(() => animateSection(index, 1), 500);
+      }
+    }
+  });
+});
+
+    </script>
+    
+  
+</body>
+</html>
