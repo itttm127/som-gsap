@@ -590,6 +590,13 @@ h2 {
   }
 }
 @media (max-width: 600px) {
+  .slide_item img {
+    flex: none;
+    width: 30vw;
+    height: 30vh;
+    margin-right: 1rem;
+  }
+
   .circle-link {
     width: 120px;
     height: 120px;

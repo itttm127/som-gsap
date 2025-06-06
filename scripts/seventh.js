@@ -14,7 +14,6 @@ const splitHeadline = new SplitText(headline, {
 });
 
 // Initial states
-gsap.set(splitHeadline.chars, { autoAlpha: 0, y: 50 });
 gsap.set(description, { autoAlpha: 0, y: 40 });
 gsap.set(circles, { autoAlpha: 0, scale: 0.8 });
 gsap.set(signIn, { autoAlpha: 0, y: 30 });
@@ -24,7 +23,7 @@ ScrollTrigger.create({
   trigger: seventhSection,
   start: "top 75%",
   onEnter: () => {
-    const tl = gsap.timeline();
+    const tl = gsap.timeline().addLabel("seventh_section");
 
     // Animate headline
     tl.fromTo(
@@ -40,7 +39,7 @@ ScrollTrigger.create({
           from: "random",
         },
       },
-      0.1
+      "seventh_section"
     );
 
     // Animate description
@@ -52,7 +51,7 @@ ScrollTrigger.create({
         duration: 1,
         ease: "power2.out",
       },
-      "+=0.1"
+      "seventh_section+=0.1"
     );
 
     // Animate circle items
@@ -65,7 +64,7 @@ ScrollTrigger.create({
         ease: "power2.out",
         stagger: 0.15,
       },
-      "+=0.2"
+      "seventh_section+=0.2"
     );
 
     // Animate sign-in
@@ -77,7 +76,7 @@ ScrollTrigger.create({
         duration: 1,
         ease: "power2.out",
       },
-      "+=0.3"
+      "seventh_section+=0.3"
     );
   },
 });
