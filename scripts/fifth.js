@@ -39,7 +39,6 @@ ScrollTrigger.create({
       ease: "power2.out",
       stagger: 0.02
     }, 0)
-
     .to([authorImage, authorName, divider, authorBio], {
       autoAlpha: 1,
       x: 0,
@@ -47,7 +46,6 @@ ScrollTrigger.create({
       ease: "power2.out",
       stagger: 0.1
     }, "-=0.6")
-
     .to(prefaceSplit.lines, {
       autoAlpha: 1,
       y: 0,

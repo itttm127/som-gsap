@@ -3,18 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Header with Fixed Hamburger</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond&display=swap"
-      rel="stylesheet"
-    />
-    <link href="./styles/global.css" rel="stylesheet" />
+    <title>Book Feature Scroll</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="">
       <nav></nav>
     </header>
-
     <!-- Hamburger icon fixed to screen -->
     <div class="hamburger">
       <span></span>
@@ -28,218 +24,82 @@
       <li><a href="#aboutAuthor">About the Author</a></li>
       <li><a href="#bookClubResources">Book Club Resources</a></li>
     </ul>
-
-    <main id="scrollsmoother-container">
-      <section
-        id="animation-section"
-        class="scene section first-section book-feature"
-      >
-        <div class="sun">
-          <img src="Sun-vector.png" alt="Sun" class="sun-img" />
-        </div>
-        <div class="fish">
-          <img src="fish-rocket@2x.png" alt="Fish" class="fish-img" />
-        </div>
-        <div class="cloud">
-          <img src="clouds-vector@2x.png" alt="Cloud" class="cloud-img" />
+    <main>
+      <section class="first-section observer-section">
+        <div class="outer">
+          <div class="inner">
+            <div class="bg">
+              <div class="scene">
+                <h2 class="section-heading"></h2>
+                <div class="sun">
+                  <img src="Sun-vector.png" alt="Sun" class="sun-img" />
+                </div>
+                <div class="fish">
+                  <img src="fish-rocket@2x.png" alt="Fish" class="fish-img" />
+                </div>
+                <div class="cloud">
+                  <img
+                    src="clouds-vector@2x.png"
+                    alt="Cloud"
+                    class="cloud-img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="waves">
           <img src="waves.png" alt="Waves" class="wave-img" />
         </div>
       </section>
 
-      <section
-        id="twelveStories"
-        class="section second-section book-feature first"
-      >
+      <section class="first bg-white observer-section">
         <div class="outer">
           <div class="inner">
-            <div class="book-quote">
-              <p>
+            <div class="bg one book-feature">
+              <p class="section-heading text-center">
                 WE'VE IMAGINED AND REIMAGINED THE WORLD.<br />
                 AND WE FORGOT WE HAVE TO LIVE IN IT.
               </p>
-            </div>
+              <div class="book-content">
+                <div class="book-cover reveal">
+                  <img
+                    src="sushi-on-mars-front.jpg"
+                    alt="Sushi on Mars book cover"
+                  />
+                </div>
 
-            <div class="book-content">
-              <div class="book-cover reveal">
-                <img
-                  src="sushi-on-mars-front.jpg"
-                  alt="Sushi on Mars book cover"
-                />
-              </div>
-
-              <div class="book-price">
-                <div class="price-badge">
-                  <span>BUY THE<br />HARDCOVER WITH<br />DUST JACKET</span>
-                  <strong>$20.99</strong>
+                <div class="book-price">
+                  <div class="price-badge">
+                    <span>BUY THE<br />HARDCOVER WITH<br />DUST JACKET</span>
+                    <strong>$20.99</strong>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <section class="section third-section book-feature second">
+      <section class="second observer-section">
         <div class="outer">
           <div class="inner">
-            <div class="book-quote">
-              <p>
+            <div class="bg">
+              <p class="section-heading">
                 WE'VE IMAGINED AND REIMAGINED THE WORLD.<br />
                 AND WE FORGOT WE HAVE TO LIVE IN IT.
               </p>
-            </div>
-
-            <div class="book-content">
-              <div class="book-cover reveal">
-                <img
-                  src="sushi-on-mars-back.jpg"
-                  alt="Sushi on Mars book cover"
-                />
-              </div>
-
-              <div class="book-price">
-                <div class="price-badge">
-                  <span>BUY THE<br />HARDCOVER WITH<br />DUST JACKET</span>
-                  <strong>$20.99</strong>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section fourth-section book-feature third">
-        <div class="outer">
-          <div class="inner">
-            <div class="book-quote">
-              <p>THE CURE OF US</p>
-            </div>
-
-            <div class="slide_section">
-              <div class="slides">
-                <div class="slide_item first">
+              <div class="book-content">
+                <div class="book-cover reveal">
                   <img
-                    src="imgs/architecture-greed.png"
+                    src="sushi-on-mars-back.jpg"
                     alt="Sushi on Mars book cover"
                   />
-                  <div class="description">
-                    <p>
-                      Every citizen carried their worth on their skin.<br />Kindness
-                      here was a literal tender.
-                    </p>
-                  </div>
-                </div>
-                <div class="slide_item">
-                  <img
-                    src="imgs/blind-toast.png"
-                    alt="Sushi on Mars book cover"
-                  />
-                  <div class="description">
-                    <p>
-                      Every citizen carried their worth on their skin.<br />Kindness
-                      here was a literal tender.
-                    </p>
-                  </div>
                 </div>
 
-                <div class="slide_item">
-                  <img
-                    src="imgs/cityof-borrowed.png"
-                    alt="Sushi on Mars book cover"
-                  />
-                  <div class="description">
-                    <p>
-                      The cheers fueled the desire.<br />
-                      The desire grew the real estate.
-                    </p>
-                  </div>
-                </div>
-                <div class="slide_item">
-                  <img src="imgs/cure-of-us.png" alt="cure-of-us" />
-                  <div class="description">
-                    <p>
-                      With every turn of a page, somewhere in the world,<br />the
-                      ink would bleed into reality.
-                    </p>
-                  </div>
-                </div>
-                <div class="slide_item">
-                  <img src="imgs/deathball.png" alt="deathball.png" />
-                  <div class="description">
-                    <p>
-                      The cheers fueled the desire.<br />
-                      The desire grew the real estate.
-                    </p>
-                  </div>
-                </div>
-                <div class="slide_item">
-                  <img src="imgs/forgotten-notes.png" alt="forgotten-notes" />
-                  <div class="description">
-                    <p>
-                      I am the place where humanity comes to be seen.<br />But I
-                      had never seen anyone like Maya.
-                    </p>
-                  </div>
-                </div>
-                <div class="slide_item">
-                  <img src="imgs/human-override.png" alt="human-override" />
-                  <div class="description">
-                    <p>
-                      Sometimes I wonder which is heavier—the Colt in my
-                      holster<br />or the worn whistle which hangs from my neck.
-                    </p>
-                  </div>
-                </div>
-                <div class="slide_item">
-                  <img
-                    src="imgs/kindness-currency.png"
-                    alt="kindness-currency"
-                  />
-                  <div class="description">
-                    <p>
-                      What the soil knows, <br />
-                      the wine reveals.
-                    </p>
-                  </div>
-                </div>
-                <div class="slide_item">
-                  <img src="imgs/prophetic.png" alt="prophetic" />
-                  <div class="description">
-                    <p>
-                      The cheers fueled the desire.<br />
-                      The desire grew the real estate.
-                    </p>
-                  </div>
-                </div>
-                <div class="slide_item">
-                  <img src="imgs/sushi-on-mars.png" alt="sushi-on-mars" />
-                  <div class="description">
-                    <p>
-                      “I have to believe that. Otherwise, what are we doing
-                      here?”<br />– Shigeru Takashiro
-                    </p>
-                  </div>
-                </div>
-                <div class="slide_item">
-                  <img
-                    src="imgs/tomorrrows-justice.png"
-                    alt="tomorrrows-justice"
-                  />
-                  <div class="description">
-                    <p>
-                      The digital world speaks in ones and zeros.<br />Our world
-                      speaks in heartbeats and whispers.
-                    </p>
-                  </div>
-                </div>
-                <div class="slide_item">
-                  <img src="imgs/unwritten-fate.png" alt="unwritten-fate" />
-                  <div class="description">
-                    <p>
-                      The cheers fueled the desire.<br />
-                      The desire grew the real estate.
-                    </p>
+                <div class="book-price">
+                  <div class="price-badge">
+                    <span>BUY THE<br />HARDCOVER WITH<br />DUST JACKET</span>
+                    <strong>$20.99</strong>
                   </div>
                 </div>
               </div>
@@ -247,193 +107,327 @@
           </div>
         </div>
       </section>
-
-      <section
-        id="aboutAuthor"
-        class="section fifth-section book-feature fourth"
-      >
+      <section class="third observer-section">
         <div class="outer">
           <div class="inner">
-            <div class="container">
-              <div class="left-column">
-                <div class="author-image">
-                  <img src="imgs/deathball.png" />
-                </div>
-                <div class="author-name">PAUL VINOD</div>
-                <div class="divider"></div>
-                <div class="author-bio">
-                  Paul Vinod is an advertising Creative Director/Copywriter
-                  who’s walked the streets of NYC for over 20 years, and learned
-                  about creating stories on Madison Ave. He currently lives in
-                  Newtown, Pa with his wife Anne Paul - children’s book author
-                  and designer. They run a creative boutique and strategy
-                  agency.
-                </div>
-              </div>
-              <div class="right-column">
-                <div class="book-quote">
-                  <p>AUTHOR’S PREFACE</p>
-                </div>
-                <!-- <div class="preface-title book-quote">AUTHOR’S PREFACE</div> -->
-                <div class="preface-text">
-                  For years, my words served a paycheck. They were crafted not
-                  to linger, but to persuade. Advertising, they call it. The art
-                  of the fleeting phrase, the economy of language— Why say
-                  ‘lackadaisical’ when ‘lazy’ will do? Why ornament when a
-                  tagline is enough? Long form writing had no place in my world.
-                  And yet, this book—this unwieldy thing—arrived. The stories
-                  within it are relics of my days in advertising. The ones that
-                  never made it. The ideas too odd, too unruly to be shaped into
-                  commerce. Still. They are what I have felt in people and
-                  wished for them. And in their own way, they are human maps of
-                  where we are and where we could be. There is no single genre
-                  to contain them — modern folk tales and science fiction,
-                  thrillers and legal drama, a Western noir even. They formed
-                  freely like Playdoh, pressed and shaped by nothing but
-                  curiosity. I did not know I needed to tell them until the
-                  telling began. And within them, tucked between the lines, are
-                  things that belong in my own journey—my contradictions, my
-                  wanderings. There are no flawless heroes here, only people,
-                  broken and whole in the same breath. Fearful and fearless,
-                  seeking and found, made and remade. We are never just one
-                  thing. In these pages, there are questions we don’t want to
-                  answer, questions often unasked, unvoiced. None of it was
-                  deliberate; all of it is true. Ink is naked in that way. It
-                  reveals what we do not always mean to show. These stories
-                  breathe. But they suck out the oxygen from our assumptions.
-                  Read them in order or at random. One at a time or all at once.
-                  They are yours now. - Paul
+            <div class="bg">
+              <p class="section-heading">THE CURE OF US</p>
+              <div class="slide_section">
+                <div class="slides">
+                  <div class="slide_item first">
+                    <img
+                      src="imgs/architecture-greed.png"
+                      alt="Sushi on Mars book cover"
+                    />
+                    <div class="description">
+                      <p>
+                        Every citizen carried their worth on their skin.<br />Kindness
+                        here was a literal tender.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="slide_item">
+                    <img
+                      src="imgs/blind-toast.png"
+                      alt="Sushi on Mars book cover"
+                    />
+                    <div class="description">
+                      <p>
+                        Every citizen carried their worth on their skin.<br />Kindness
+                        here was a literal tender.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="slide_item">
+                    <img
+                      src="imgs/cityof-borrowed.png"
+                      alt="Sushi on Mars book cover"
+                    />
+                    <div class="description">
+                      <p>
+                        The cheers fueled the desire.<br />
+                        The desire grew the real estate.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="slide_item">
+                    <img src="imgs/cure-of-us.png" alt="cure-of-us" />
+                    <div class="description">
+                      <p>
+                        With every turn of a page, somewhere in the world,<br />the
+                        ink would bleed into reality.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="slide_item">
+                    <img src="imgs/deathball.png" alt="deathball.png" />
+                    <div class="description">
+                      <p>
+                        The cheers fueled the desire.<br />
+                        The desire grew the real estate.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="slide_item">
+                    <img src="imgs/forgotten-notes.png" alt="forgotten-notes" />
+                    <div class="description">
+                      <p>
+                        I am the place where humanity comes to be seen.<br />But
+                        I had never seen anyone like Maya.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="slide_item">
+                    <img src="imgs/human-override.png" alt="human-override" />
+                    <div class="description">
+                      <p>
+                        Sometimes I wonder which is heavier—the Colt in my
+                        holster<br />or the worn whistle which hangs from my
+                        neck.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="slide_item">
+                    <img
+                      src="imgs/kindness-currency.png"
+                      alt="kindness-currency"
+                    />
+                    <div class="description">
+                      <p>
+                        What the soil knows, <br />
+                        the wine reveals.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="slide_item">
+                    <img src="imgs/prophetic.png" alt="prophetic" />
+                    <div class="description">
+                      <p>
+                        The cheers fueled the desire.<br />
+                        The desire grew the real estate.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="slide_item">
+                    <img src="imgs/sushi-on-mars.png" alt="sushi-on-mars" />
+                    <div class="description">
+                      <p>
+                        “I have to believe that. Otherwise, what are we doing
+                        here?”<br />– Shigeru Takashiro
+                      </p>
+                    </div>
+                  </div>
+                  <div class="slide_item">
+                    <img
+                      src="imgs/tomorrrows-justice.png"
+                      alt="tomorrrows-justice"
+                    />
+                    <div class="description">
+                      <p>
+                        The digital world speaks in ones and zeros.<br />Our
+                        world speaks in heartbeats and whispers.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="slide_item">
+                    <img src="imgs/unwritten-fate.png" alt="unwritten-fate" />
+                    <div class="description">
+                      <p>
+                        The cheers fueled the desire.<br />
+                        The desire grew the real estate.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <section id="buytheBook" class="section sixth-section book-feature fifth">
+      <section class="fourth observer-section">
         <div class="outer">
           <div class="inner">
-            <div class="book-quote">
-              <p></p>
-            </div>
-
-            <div class="book-content">
-              <div class="book-cover reveal" style="border: none !important">
-                <img src="buy-the-book.jpg" alt="buy-the-book" />
+            <div class="bg">
+              <div class="container">
+                <div class="left-column">
+                  <div class="author-image">
+                    <img src="imgs/deathball.png" />
+                  </div>
+                  <div class="author-name">PAUL VINOD</div>
+                  <div class="divider"></div>
+                  <div class="author-bio">
+                    Paul Vinod is an advertising Creative Director/Copywriter
+                    who’s walked the streets of NYC for over 20 years, and
+                    learned about creating stories on Madison Ave. He currently
+                    lives in Newtown, Pa with his wife Anne Paul - children’s
+                    book author and designer. They run a creative boutique and
+                    strategy agency.
+                  </div>
+                </div>
+                <div class="right-column">
+                  <div class="book-quote">
+                    <p class="section-heading">AUTHOR’S PREFACE</p>
+                  </div>
+                  <!-- <div class="preface-title book-quote">AUTHOR’S PREFACE</div> -->
+                  <div class="preface-text">
+                    For years, my words served a paycheck. They were crafted not
+                    to linger, but to persuade. Advertising, they call it. The
+                    art of the fleeting phrase, the economy of language— Why say
+                    ‘lackadaisical’ when ‘lazy’ will do? Why ornament when a
+                    tagline is enough? Long form writing had no place in my
+                    world. And yet, this book—this unwieldy thing—arrived. The
+                    stories within it are relics of my days in advertising. The
+                    ones that never made it. The ideas too odd, too unruly to be
+                    shaped into commerce. Still. They are what I have felt in
+                    people and wished for them. And in their own way, they are
+                    human maps of where we are and where we could be. There is
+                    no single genre to contain them — modern folk tales and
+                    science fiction, thrillers and legal drama, a Western noir
+                    even. They formed freely like Playdoh, pressed and shaped by
+                    nothing but curiosity. I did not know I needed to tell them
+                    until the telling began. And within them, tucked between the
+                    lines, are things that belong in my own journey—my
+                    contradictions, my wanderings. There are no flawless heroes
+                    here, only people, broken and whole in the same breath.
+                    Fearful and fearless, seeking and found, made and remade. We
+                    are never just one thing. In these pages, there are
+                    questions we don’t want to answer, questions often unasked,
+                    unvoiced. None of it was deliberate; all of it is true. Ink
+                    is naked in that way. It reveals what we do not always mean
+                    to show. These stories breathe. But they suck out the oxygen
+                    from our assumptions. Read them in order or at random. One
+                    at a time or all at once. They are yours now. - Paul
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="circle-container">
-              <a href="" class="circle-link" target="_blank">
-                <span>Buy Kindle Version</span>
-                <strong>Amazon</strong>
-              </a>
-              <a href="" class="circle-link" target="_blank">
-                <span>Buy ePub Version</span>
-                <strong>Apple Books</strong>
-              </a>
-              <a href="" class="circle-link" target="_blank">
-                <span>Buy Printed Version</span>
-                <strong>Sushionmars.com</strong>
-              </a>
-            </div>
-            <div class="circle-container"></div>
-            <div class="circle-container"></div>
           </div>
         </div>
       </section>
-
-      <section
-        id="bookClubResources"
-        class="section seventh-section book-feature sixth"
-      >
+      <section class="fifth observer-section">
         <div class="outer">
           <div class="inner">
-            <div class="book-quote">
-              <p>AN INTERACTIVE CHATBOT EXPERIENCE FOR BOOK CLUBS</p>
+            <div class="bg">
+              <p class="section-heading"></p>
+
+              <div class="book-content">
+                <div class="book-cover reveal" style="border: none !important">
+                  <img src="buy-the-book.jpg" alt="buy-the-book" />
+                </div>
+              </div>
+              <div class="circle-container">
+                <a href="" class="circle-link" target="_blank">
+                  <span>Buy Kindle Version</span>
+                  <strong>Amazon</strong>
+                </a>
+                <a href="" class="circle-link" target="_blank">
+                  <span>Buy ePub Version</span>
+                  <strong>Apple Books</strong>
+                </a>
+                <a href="" class="circle-link" target="_blank">
+                  <span>Buy Printed Version</span>
+                  <strong>Sushionmars.com</strong>
+                </a>
+              </div>
+              <div class="circle-container"></div>
+              <div class="circle-container"></div>
             </div>
-            <!-- <h2>AN INTERACTIVE CHATBOT EXPERIENCE FOR BOOK CLUBS</h2> -->
-            <p class="description book-quote">
-              Buy five or more books and unlock a chatbot experience with the
-              characters in the story. Ask questions. Debate with the character.
-              Maybe find answers?
-            </p>
-
-            <div class="circle-grid">
-              <div class="circle-item">
-                <img src="imgs/prophetic.png" alt="Prophetic Post" />
-                <div class="circle-label">
-                  <span class="title">The Prophetic Post.</span>
-                  <span class="chat"
-                    >Chat with <span class="red">Maya Kovich.</span></span
-                  >
-                </div>
-              </div>
-
-              <div class="circle-item">
-                <img src="imgs/human-override.png" alt="The Human Override" />
-                <div class="circle-label">
-                  <span class="title">The Human Override.</span>
-                  <span class="chat"
-                    >Chat with <span class="red">Maxwell Stone.</span></span
-                  >
-                </div>
-              </div>
-
-              <div class="circle-item">
-                <img src="imgs/kindness-currency.png" alt="Kindness Card" />
-                <div class="circle-label">
-                  <span class="title">Kindness Card.</span>
-                  <span class="chat"
-                    >Chat with <span class="red">August Voss.</span></span
-                  >
-                </div>
-              </div>
-
-              <div class="circle-item">
-                <img src="imgs/sushi-on-mars.png" alt="Sushi on Mars" />
-                <div class="circle-label">
-                  <span class="title">Sushi on Mars.</span>
-                  <span class="chat"
-                    ><span class="blue">Chat with </span
-                    ><span class="red">Shigeru Takashiro.</span></span
-                  >
-                </div>
-              </div>
-
-              <div class="circle-item">
-                <img src="imgs/cure-of-us.png" alt="The Cure of Us" />
-                <div class="circle-label">
-                  <span class="title">The Cure of Us.</span>
-                  <span class="chat"
-                    >Chat with <span class="red">Julian Rhodes.</span></span
-                  >
-                </div>
-              </div>
-
-              <div class="circle-item">
-                <img src="imgs/deathball.png" alt="Death Ball" />
-                <div class="circle-label">
-                  <span class="title">Death Ball.</span>
-                  <span class="chat"
-                    >Chat with <span class="red">Marshall Gray.</span></span
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="sign-in">
-              <label for="code">Book Club Sign-In Code</label>
-              <input type="text" id="code" placeholder="Enter code here" />
-            </div>
-
-            <div class="circle-container"></div>
-            <div class="circle-container"></div>
           </div>
         </div>
       </section>
+
+      <section class="sixth observer-section">
+        <div class="outer">
+          <div class="inner">
+            <div class="bg">
+              <p class="section-heading">
+                AN INTERACTIVE CHATBOT EXPERIENCE FOR BOOK CLUBS
+              </p>
+
+              <p class="description book-quote">
+                Buy five or more books and unlock a chatbot experience with the
+                characters in the story. Ask questions. Debate with the
+                character. Maybe find answers?
+              </p>
+
+              <div class="circle-grid">
+                <div class="circle-item">
+                  <img src="imgs/prophetic.png" alt="Prophetic Post" />
+                  <div class="circle-label">
+                    <span class="title">The Prophetic Post.</span>
+                    <span class="chat"
+                      >Chat with <span class="red">Maya Kovich.</span></span
+                    >
+                  </div>
+                </div>
+
+                <div class="circle-item">
+                  <img src="imgs/human-override.png" alt="The Human Override" />
+                  <div class="circle-label">
+                    <span class="title">The Human Override.</span>
+                    <span class="chat"
+                      >Chat with <span class="red">Maxwell Stone.</span></span
+                    >
+                  </div>
+                </div>
+
+                <div class="circle-item">
+                  <img src="imgs/kindness-currency.png" alt="Kindness Card" />
+                  <div class="circle-label">
+                    <span class="title">Kindness Card.</span>
+                    <span class="chat"
+                      >Chat with <span class="red">August Voss.</span></span
+                    >
+                  </div>
+                </div>
+
+                <div class="circle-item">
+                  <img src="imgs/sushi-on-mars.png" alt="Sushi on Mars" />
+                  <div class="circle-label">
+                    <span class="title">Sushi on Mars.</span>
+                    <span class="chat"
+                      ><span class="blue">Chat with </span
+                      ><span class="red">Shigeru Takashiro.</span></span
+                    >
+                  </div>
+                </div>
+
+                <div class="circle-item">
+                  <img src="imgs/cure-of-us.png" alt="The Cure of Us" />
+                  <div class="circle-label">
+                    <span class="title">The Cure of Us.</span>
+                    <span class="chat"
+                      >Chat with <span class="red">Julian Rhodes.</span></span
+                    >
+                  </div>
+                </div>
+
+                <div class="circle-item">
+                  <img src="imgs/deathball.png" alt="Death Ball" />
+                  <div class="circle-label">
+                    <span class="title">Death Ball.</span>
+                    <span class="chat"
+                      >Chat with <span class="red">Marshall Gray.</span></span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="sign-in">
+                <label for="code text-black">Book Club Sign-In Code</label>
+                <input type="text" id="code" placeholder="Enter code here" />
+              </div>
+
+              <div class="circle-container"></div>
+              <div class="circle-container"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="hidden"></footer>
     </main>
-
-    <footer class="hidden"></footer>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/DrawSVGPlugin.min.js"></script>
@@ -446,12 +440,387 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
-    <script src="./scripts/main.js"></script>
-    <script src="./scripts/second.js"></script>
-    <script src="./scripts/third.js"></script>
-    <script src="./scripts/fourth.js"></script>
-    <script src="./scripts/fifth.js"></script>
-    <script src="./scripts/sixth.js"></script>
-    <script src="./scripts/seventh.js"></script>
+
+    <script>
+      gsap.registerPlugin(
+        ScrollTrigger,
+        ScrollSmoother,
+        DrawSVGPlugin,
+        MotionPathPlugin,
+        Observer,
+        SplitText
+      );
+
+      let sections = document.querySelectorAll(".observer-section"),
+        images = document.querySelectorAll(".bg"),
+        headings = gsap.utils.toArray(".section-heading"),
+        prices = gsap.utils.toArray(".book-price"),
+        outerWrappers = gsap.utils.toArray(".outer"),
+        innerWrappers = gsap.utils.toArray(".inner"),
+        splitHeadings = headings.map(
+          (heading) =>
+            new SplitText(heading, {
+              type: "chars,words,lines",
+              linesClass: "clip-text",
+            })
+        ),
+        currentIndex = -1,
+        animating,
+        observerActive = false;
+
+      //   Menu Animation
+      const ham = document.querySelector(".hamburger");
+      const menu = document.querySelector("ul.nav-links");
+      const links = menu.querySelectorAll("li");
+
+      var tl = gsap.timeline({ paused: true, reversed: true });
+
+      tl.to(menu, {
+        duration: 1,
+        opacity: 1,
+        height: "30vh", // change this to 100vh for full-height menu
+        ease: "expo.inOut",
+      });
+      tl.from(
+        links,
+        {
+          duration: 1,
+          opacity: 0,
+          y: 20,
+          stagger: 0.1,
+          ease: "expo.inOut",
+        },
+        "-=0.5"
+      );
+
+      tl.reverse();
+
+      ham.addEventListener("click", () => {
+        tl.reversed(!tl.reversed());
+        if (ham.classList.contains("is-active")) {
+          ham.classList.remove("is-active");
+        } else {
+          ham.classList.add("is-active");
+        }
+      });
+
+      gsap.set(outerWrappers, { yPercent: 100 });
+      gsap.set(innerWrappers, { yPercent: -100 });
+
+      function resetGSAPAnimation() {
+        // Hide all sections
+        gsap.set(sections, { autoAlpha: 0, zIndex: 0 });
+        gsap.set(".first-section", { autoAlpha: 1, clearProps: "all" });
+        // Reset outer/inner wrappers
+        gsap.set(outerWrappers, { yPercent: 100 });
+        gsap.set(innerWrappers, { yPercent: -100 });
+
+        // Reset images
+        gsap.set(images, { yPercent: 0 });
+
+        // Reset headings
+        splitHeadings.forEach((split) => {
+          gsap.set(split.chars, { autoAlpha: 0, yPercent: 150 });
+        });
+        // Reset triggers
+        currentIndex = -1;
+        animating = false;
+        observerActive = false;
+      }
+
+      function gotoSection(index, direction) {
+        if (animating || index < 0 || index >= sections.length) return;
+
+        animating = true;
+        let fromTop = direction === -1,
+          dFactor = fromTop ? -1 : 1,
+          tl = gsap.timeline({
+            defaults: { duration: 1.25, ease: "power1.inOut" },
+            onComplete: () => (animating = false),
+          });
+        if (currentIndex >= 0) {
+          // The first time this function runs, current is -1
+          gsap.set(sections[currentIndex], { zIndex: 0 });
+          tl.to(images[currentIndex], { yPercent: -15 * dFactor }).set(
+            sections[currentIndex],
+            { autoAlpha: 0 }
+          );
+        }
+        gsap.set(sections[index], { autoAlpha: 1, zIndex: 1 });
+        playExtraAnimation(sections[index]);
+        tl.fromTo(
+          [outerWrappers[index], innerWrappers[index]],
+          {
+            yPercent: (i) => (i ? -100 * dFactor : 100 * dFactor),
+          },
+          {
+            yPercent: 0,
+          },
+          0
+        )
+          .fromTo(images[index], { yPercent: 15 * dFactor }, { yPercent: 0 }, 0)
+          .fromTo(
+            splitHeadings[index].chars,
+            {
+              autoAlpha: 0,
+              yPercent: 150 * dFactor,
+            },
+            {
+              autoAlpha: 1,
+              yPercent: 0,
+              duration: 1,
+              ease: "power2",
+              stagger: {
+                each: 0.02,
+                from: "random",
+              },
+            },
+            0.2
+          );
+
+        currentIndex = index;
+      }
+
+      Observer.create({
+        type: "wheel,touch,pointer",
+        wheelSpeed: -1,
+        onDown: () =>
+          !animating && observerActive && gotoSection(currentIndex - 1, -1),
+        onUp: () =>
+          !animating && observerActive && gotoSection(currentIndex + 1, 1),
+        tolerance: 10,
+        preventDefault: false,
+      });
+
+      gotoSection(0, 1);
+      setupScrollTriggers();
+      // First Section Animation
+      function setupScrollTriggers() {
+        let firstTimeline = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".first-section",
+            start: "top top",
+            end: "bottom bottom",
+            scrub: 2,
+            onLeave: () => {
+              console.log("finished");
+              observerActive = true;
+            },
+            onEnterBack: () => {
+              if (!observerActive) {
+                console.log("start");
+                resetGSAPAnimation();
+              }
+            },
+          },
+        });
+
+        firstTimeline.add("sunStart");
+
+        // ☀️ Sun Animation
+        gsap.to(".wave-img", {
+          y: 200,
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".first-section",
+            start: "top top",
+            end: "bottom bottom",
+            scrub: true,
+          },
+        });
+
+        gsap.to(".wave-img", {
+          y: "+=10",
+          duration: 2,
+          repeat: -1,
+          yoyo: true,
+          ease: "sine.inOut",
+        });
+
+        // ☀️ Sun rise
+        firstTimeline.fromTo(
+          ".sun-img",
+          { y: 100, opacity: 0 },
+          {
+            y: -585,
+            opacity: 1,
+            ease: "power2.out",
+            duration: 2,
+          },
+          "sunStart"
+        );
+
+        // 🌊 Waves fade out later
+        firstTimeline.to(
+          ".wave-img",
+          {
+            opacity: 0.5,
+            ease: "power1.out",
+          },
+          "sunStart+=0.5"
+        );
+
+        // 🐟 Fish appears after sun
+        gsap.fromTo(
+          ".fish-img",
+          { y: 300, opacity: 0 },
+          {
+            y: -400,
+            opacity: 1,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: ".first-section",
+              start: "40% top",
+              end: "70% top",
+              scrub: 3,
+              onLeave: () => {
+                console.log("Fish animation scroll finished");
+              },
+            },
+          }
+        );
+
+        // ☁️ Cloud appears last
+        gsap.fromTo(
+          ".cloud-img",
+          { y: 400, opacity: 0 },
+          {
+            y: -350,
+            opacity: 1,
+            duration: 2,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: ".first-section",
+              start: "40% top",
+              end: "70% top",
+              scrub: 3,
+              onLeave: () => {
+                console.log("Fish animation scroll finished");
+              },
+            },
+          }
+        );
+      }
+      function playExtraAnimation(section) {
+        if (section.classList.contains("first")) {
+          gsap.fromTo(
+            section.querySelector(".book-price"),
+            { x: "+=200", rotate: 360 },
+            { x: 0, rotate: 0, duration: 2, ease: "none" }
+          );
+        } else if (section.classList.contains("second")) {
+          gsap.fromTo(
+            section.querySelector(".book-price"),
+            { x: "+=200", rotate: 360 },
+            { x: 0, rotate: 0, duration: 2, ease: "none" }
+          );
+        } else if (section.classList.contains("third")) {
+          const fourth_slides = section.querySelector(".slides");
+          const fourth_slideItems = section.querySelectorAll(".slide_item");
+          const fourth_slide_descriptions = section.querySelector(
+            ".slide_item .description p"
+          );
+          const groups = Math.ceil(fourth_slideItems.length / 3);
+          const slideWidth = fourth_slideItems[0].offsetWidth; // assuming fixed width
+          const totalScrollWidth = slideWidth * fourth_slideItems.length;
+          // Animate slides by `x`
+          gsap.to(fourth_slides, {
+            x: () => `-${slideWidth * 3 * (groups - 1)}px`, // move 3 at a time
+            ease: "none",
+            scrollTrigger: {
+              trigger: section,
+              start: "top top",
+              end: () => `+=${window.innerWidth * groups}`, // each group takes a screen height
+              scrub: true,
+              pin: true,
+              anticipatePin: 1,
+            },
+          });
+
+          // === Hover Animation for Description Lines ===
+          document.querySelectorAll(".slide_item").forEach((item) => {
+            const p = item.querySelector(".description p");
+            if (!p) return;
+
+            const split = new SplitText(p, {
+              type: "lines",
+              linesClass: "clip-line",
+            });
+
+            // Hide all lines initially
+            gsap.set(split.lines, { autoAlpha: 0, y: 30 });
+
+            item.addEventListener("mouseenter", () => {
+              gsap.to(split.lines, {
+                autoAlpha: 1,
+                y: 0,
+                duration: 1,
+                ease: "power2.out",
+                stagger: 0.2,
+              });
+            });
+
+            item.addEventListener("mouseleave", () => {
+              gsap.to(split.lines, {
+                autoAlpha: 0,
+                y: 30,
+                duration: 0.3,
+                stagger: 0.1,
+              });
+            });
+          });
+        } else if (section.classList.contains("fourth")) {
+          const authorImage = section.querySelector(".author-image");
+          const authorName = section.querySelector(".author-name");
+          const divider = section.querySelector(".divider");
+          const authorBio = section.querySelector(".author-bio");
+          const prefaceText = section.querySelector(".preface-text");
+          const prefaceSplit = new SplitText(prefaceText, {
+            type: "lines",
+            linesClass: "clip-line",
+          });
+          // gsap.set([authorImage, authorName, divider, authorBio], {
+          //   autoAlpha: 0,
+          //   x: -50,
+          // });
+          gsap.set(prefaceSplit.lines, { autoAlpha: 0, y: 30 });
+
+          gsap.to(
+            prefaceSplit.lines,
+            {
+              autoAlpha: 1,
+              y: 0,
+              duration: 0.8,
+              ease: "power2.out",
+              stagger: 0.05,
+            },
+            "-=0.4"
+          );
+        } else if (section.classList.contains("fourth")) {
+          const bookCover = section.querySelector(".book-cover");
+          const bookCoverImg = section.querySelector(".book-cover img");
+          const sixth_links = section.querySelectorAll(".circle-link");
+
+          gsap.set(bookCover, { yPercent: -100 });
+          gsap.set(bookCoverImg, { yPercent: 120 });
+          gsap.set(sixth_links, { autoAlpha: 0, y: 30 });
+
+          // Animate book cover
+          gsap
+            .to(bookCover, {
+              yPercent: 0,
+              duration: 2,
+              ease: "power2.out",
+            })
+            .to(bookCoverImg, {
+              yPercent: 0,
+              duration: 2,
+              ease: "power2.out",
+            });
+        }
+      }
+      // original: https://codepen.io/BrianCross/pen/PoWapLP
+      // horizontal version: https://codepen.io/GreenSock/pen/xxWdeMK
+    </script>
   </body>
 </html>

@@ -35,7 +35,12 @@ ScrollTrigger.create({
 function third_animateIn() {
   const tl = gsap.timeline();
 
-  gsap.set(third_section, { autoAlpha: 1 });
+  gsap.fromTo(
+    third_section,
+    { autoAlpha: 0, yPercent: 100 },
+    { autoAlpha: 1, yPercent: 0, duration: 1.5, ease: "none" }
+  );
+
   tl.addLabel("third_section")
     .fromTo(
       third_splitHeading.chars,
