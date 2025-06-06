@@ -75,7 +75,7 @@ gsap.to(fourth_slides, {
   scrollTrigger: {
     trigger: fourth_section,
     start: "top top",
-    end: () => `+=${window.innerHeight * groups}`, // each group takes a screen height
+    end: () => `+=${window.innerWidth * groups}`, // each group takes a screen height
     scrub: true,
     pin: true,
     anticipatePin: 1,

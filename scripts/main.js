@@ -146,6 +146,28 @@ ham.addEventListener("click", () => {
 });
 //   Menu Animation End
 
+ScrollTrigger.create({
+  trigger: "#animation-section",
+  start: "top center",
+  end: "bottom top",
+  onEnter: () => {
+    document.querySelector("footer").classList.add("hidden");
+    gsap.to("#animation-section", { autoAlpha: 1, duration: 0.3 });
+  },
+  onLeave: () => {
+    document.querySelector("footer").classList.remove("hidden");
+    gsap.to("#animation-section", { autoAlpha: 0, duration: 0.3 });
+  },
+  onEnterBack: () => {
+    document.querySelector("footer").classList.add("hidden");
+    gsap.to("#animation-section", { autoAlpha: 1, duration: 0.3 });
+  },
+  onLeaveBack: () => {
+    document.querySelector("footer").classList.remove("hidden");
+    gsap.to("#animation-section", { autoAlpha: 0, duration: 0.3 });
+  },
+});
+
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
