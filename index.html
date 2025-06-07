@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="">
-      <nav></nav>
-    </header>
     <!-- Hamburger icon fixed to screen -->
     <div class="hamburger">
       <span></span>
@@ -24,7 +21,11 @@
       <li><a href="#aboutAuthor">About the Author</a></li>
       <li><a href="#bookClubResources">Book Club Resources</a></li>
     </ul>
-    <main>
+    <main class="relative">
+      <div class="waves">
+        <img src="waves.png" alt="Waves" class="wave-img" />
+      </div>
+
       <section class="first-section observer-section">
         <div class="outer">
           <div class="inner">
@@ -47,9 +48,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="waves">
-          <img src="waves.png" alt="Waves" class="wave-img" />
         </div>
       </section>
 
@@ -337,10 +335,10 @@
         </div>
       </section>
 
-      <section class="sixth observer-section">
+      <section class="sixth observer-section ">
         <div class="outer">
           <div class="inner">
-            <div class="bg">
+            <div class="bg final-padding">
               <p class="section-heading">
                 AN INTERACTIVE CHATBOT EXPERIENCE FOR BOOK CLUBS
               </p>
@@ -525,11 +523,14 @@
         // Reset triggers
         currentIndex = -1;
         animating = false;
-        observerActive = false;
+        observerActive = true;
       }
 
       function gotoSection(index, direction) {
         if (animating || index < 0 || index >= sections.length) return;
+
+        // Waves
+        gsap.to('.waves', {autoAlpha: 0, duration:1});
 
         animating = true;
         let fromTop = direction === -1,
@@ -579,6 +580,10 @@
           );
 
         currentIndex = index;
+        if (sections[index].classList.contains("first-section")) {
+          observerActive = false;
+          gsap.to('.waves', {autoAlpha: 1, duration:1});
+        }
       }
 
       Observer.create({
@@ -603,14 +608,7 @@
             end: "bottom bottom",
             scrub: 2,
             onLeave: () => {
-              console.log("finished");
               observerActive = true;
-            },
-            onEnterBack: () => {
-              if (!observerActive) {
-                console.log("start");
-                resetGSAPAnimation();
-              }
             },
           },
         });
@@ -642,7 +640,7 @@
           ".sun-img",
           { y: 100, opacity: 0 },
           {
-            y: -585,
+            y: -600,
             opacity: 1,
             ease: "power2.out",
             duration: 2,
@@ -663,9 +661,9 @@
         // 🐟 Fish appears after sun
         gsap.fromTo(
           ".fish-img",
-          { y: 300, opacity: 0 },
+          { y: 200, opacity: 0 },
           {
-            y: -400,
+            y: -500,
             opacity: 1,
             ease: "power2.out",
             scrollTrigger: {
@@ -683,9 +681,9 @@
         // ☁️ Cloud appears last
         gsap.fromTo(
           ".cloud-img",
-          { y: 400, opacity: 0 },
+          { y: 250, opacity: 0 },
           {
-            y: -350,
+            y: -450,
             opacity: 1,
             duration: 2,
             ease: "power2.out",
@@ -702,6 +700,7 @@
         );
       }
       function playExtraAnimation(section) {
+        if (!section?.classList) return;
         if (section.classList.contains("first")) {
           gsap.fromTo(
             section.querySelector(".book-price"),
@@ -732,8 +731,6 @@
               start: "top top",
               end: () => `+=${window.innerWidth * groups}`, // each group takes a screen height
               scrub: true,
-              pin: true,
-              anticipatePin: 1,
             },
           });
 

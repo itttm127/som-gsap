@@ -6,6 +6,7 @@
   user-select: none;
   scroll-behavior: smooth;
   color: #000;
+  background-color: white;
 }
 
 a {
@@ -253,6 +254,7 @@ h2 * {
 }
 
 .fish img {
+  background: transparent;
   width: 100px;
 }
 
@@ -262,8 +264,9 @@ h2 * {
 }
 
 .waves {
-  bottom: 0;
-  z-index: 0;
+  background: transparent;
+  bottom: 5%;
+  z-index: 2;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -337,6 +340,7 @@ h2 * {
   top: 50%;
   transform: translateY(-50%);
   padding: 1rem;
+  border-radius: 50%;
 }
 
 .price-badge {
@@ -472,6 +476,7 @@ footer {
 .author-image img {
   width: 100%;
   height: 100%;
+  border-radius: 50%;
 }
 
 .author-name {
@@ -556,7 +561,7 @@ h2 {
 
 .description {
   max-width: 600px;
-  margin: 1rem auto 2rem;
+  margin: 1rem auto 1rem;
   font-size: 1rem;
   color: #333;
 }
@@ -592,12 +597,14 @@ h2 {
   max-width: 70%;
   margin: 0 auto 0.5rem;
   height: auto;
+  border-radius: 50%;
 }
 
 .circle-label {
   font-size: 0.85rem;
   line-height: 1.2;
   margin-top: 0.5rem;
+  background: transparent;
 }
 
 .circle-label .title {
@@ -656,7 +663,7 @@ h2 {
   }
 
   .circle-link strong {
-    font-size: 0.9rem;
+    font-size: 10px;
   }
   .circle-item {
     width: 130px;
@@ -664,7 +671,45 @@ h2 {
     padding: 0.5rem;
   }
 
+  .circle-item img {
+    margin-bottom: 0;
+  }
+
   .circle-label {
-    font-size: 0.75rem;
+    font-size: 10px;
+    background: transparent;
+  }
+
+  .slide_item{
+    min-width: 150px;
+    min-height: 150px;
+  }
+
+  .book-price{
+    visibility: hidden;
+  }
+
+  .divider{
+    display: none;
+  }
+
+  .author-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  .author-bio{
+    line-height: 12px;
+  }
+
+  .preface-text{
+    line-height: 12px;
+  }
+
+  .final-padding {
+    padding-top: 25%;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
