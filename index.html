@@ -28,31 +28,38 @@
           <img src="waves.png" alt="Waves" class="wave-img" />
         </div>
       </div>
-
-      <section class="first-section observer-section">
-        <div class="outer">
-          <div class="inner">
-            <div class="bg">
-              <div class="scene">
-                <h2 class="section-heading"></h2>
-                <div class="sun">
-                  <img src="Sun-vector.png" alt="Sun" class="sun-img" />
-                </div>
-                <div class="fish">
-                  <img src="fish-rocket@2x.png" alt="Fish" class="fish-img" />
-                </div>
-                <div class="cloud">
-                  <img
-                    src="clouds-vector@2x.png"
-                    alt="Cloud"
-                    class="cloud-img"
-                  />
+      <div id="smooth-wrapper">
+        <div id="smooth-content">
+          <section class="first-section observer-section">
+            <div class="outer">
+              <div class="inner">
+                <div class="bg">
+                  <div class="scene">
+                    <h2 class="section-heading"></h2>
+                    <div class="sun">
+                      <img src="Sun-vector.png" alt="Sun" class="sun-img" />
+                    </div>
+                    <div class="fish">
+                      <img
+                        src="fish-rocket@2x.png"
+                        alt="Fish"
+                        class="fish-img"
+                      />
+                    </div>
+                    <div class="cloud">
+                      <img
+                        src="clouds-vector@2x.png"
+                        alt="Cloud"
+                        class="cloud-img"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </section>
         </div>
-      </section>
+      </div>
 
       <section id="twelveStories" class="first bg-white observer-section">
         <div class="outer">
@@ -540,6 +547,7 @@
         gsap.to(".wave_inner", {
           bottom: "-370px", // or whatever target value you want it to move up to
           ease: "none",
+          duration: 1.5,
           onComplete: () => {
             document.querySelector(".wave_inner").style.opacity = 0;
             document.querySelector(".wave_inner").style.bottom = 0;
@@ -614,16 +622,18 @@
       gotoSection(0, 1);
       setupScrollTriggers();
       // First Section Animation
-      gsap.to(".wave_");
       function setupScrollTriggers() {
         let firstTimeline = gsap.timeline({
+          paused: true,
           scrollTrigger: {
             trigger: ".first-section",
             start: "top top",
             end: "bottom bottom",
-            scrub: 2,
+            scrub: 10,
             onLeave: () => {
-              observerActive = true;
+              setTimeout(()=>{
+                observerActive = true;
+              },1000)
             },
           },
         });
@@ -633,6 +643,7 @@
         gsap.to(".wave_inner", {
           bottom: "370px", // or whatever target value you want it to move up to
           ease: "none",
+          duration: 1.5,
           onComplete: () => {
             document.querySelector(".wave_inner").style.opacity = 0;
             document.querySelector(".wave_inner").style.bottom = 0;
@@ -694,7 +705,7 @@
               trigger: ".first-section",
               start: "40% top",
               end: "70% top",
-              scrub: 3,
+              scrub: 10,
               onLeave: () => {
                 console.log("Fish animation scroll finished");
               },
@@ -715,7 +726,7 @@
               trigger: ".first-section",
               start: "40% top",
               end: "70% top",
-              scrub: 3,
+              scrub: 10,
               onLeave: () => {
                 console.log("Fish animation scroll finished");
               },

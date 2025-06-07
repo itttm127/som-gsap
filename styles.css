@@ -246,6 +246,7 @@ h2 * {
 .cloud {
   bottom: -100px;
   z-index: 0;
+  background: transparent;
 }
 
 .sun img {
@@ -261,6 +262,7 @@ h2 * {
 .cloud img {
   max-width: 300px;
   width: 100%;
+  background: transparent;
 }
 
 .waves {
@@ -285,7 +287,7 @@ h2 * {
   height: 366.66px;
 }
 
-.wave_inner img{
+.wave_inner img {
   max-width: 1100px;
   opacity: 0;
 }
@@ -699,30 +701,30 @@ h2 {
     background: transparent;
   }
 
-  .slide_item{
+  .slide_item {
     min-width: 150px;
     min-height: 150px;
   }
 
-  .book-price{
+  .book-price {
     visibility: hidden;
   }
 
-  .divider{
+  .divider {
     display: none;
   }
 
-  .author-image{
+  .author-image {
     width: 150px;
     height: 150px;
     border-radius: 50%;
   }
 
-  .author-bio{
+  .author-bio {
     line-height: 12px;
   }
 
-  .preface-text{
+  .preface-text {
     line-height: 12px;
   }
 
