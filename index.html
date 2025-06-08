@@ -22,8 +22,11 @@
       <li><a href="#bookClubResources">Book Club Resources</a></li>
     </ul>
     <main class="relative">
-      <div class="waves">
-        <img src="waves.png" alt="Waves" class="wave-img" />
+      <div class="wave_outer">
+        <div class="wave_inner"></div>
+        <div class="waves">
+          <img src="waves.png" alt="Waves" class="wave-img" />
+        </div>
       </div>
 
       <section class="first-section observer-section">
@@ -335,7 +338,7 @@
         </div>
       </section>
 
-      <section class="sixth observer-section ">
+      <section class="sixth observer-section">
         <div class="outer">
           <div class="inner">
             <div class="bg final-padding">
@@ -530,7 +533,18 @@
         if (animating || index < 0 || index >= sections.length) return;
 
         // Waves
-        gsap.to('.waves', {autoAlpha: 0, duration:1});
+        gsap.to(".waves", { autoAlpha: 0, duration: 0 });
+        if (observerActive)
+          gsap.set(".wave_inner", { bottom: "0", autoAlpha: 1 });
+
+        gsap.to(".wave_inner", {
+          bottom: "-370px", // or whatever target value you want it to move up to
+          ease: "none",
+          onComplete: () => {
+            document.querySelector(".wave_inner").style.opacity = 0;
+            document.querySelector(".wave_inner").style.bottom = 0;
+          },
+        });
 
         animating = true;
         let fromTop = direction === -1,
@@ -582,7 +596,7 @@
         currentIndex = index;
         if (sections[index].classList.contains("first-section")) {
           observerActive = false;
-          gsap.to('.waves', {autoAlpha: 1, duration:1});
+          gsap.to(".waves", { autoAlpha: 1, duration: 1 });
         }
       }
 
@@ -600,6 +614,7 @@
       gotoSection(0, 1);
       setupScrollTriggers();
       // First Section Animation
+      gsap.to(".wave_");
       function setupScrollTriggers() {
         let firstTimeline = gsap.timeline({
           scrollTrigger: {
@@ -614,6 +629,15 @@
         });
 
         firstTimeline.add("sunStart");
+
+        gsap.to(".wave_inner", {
+          bottom: "370px", // or whatever target value you want it to move up to
+          ease: "none",
+          onComplete: () => {
+            document.querySelector(".wave_inner").style.opacity = 0;
+            document.querySelector(".wave_inner").style.bottom = 0;
+          },
+        });
 
         // ☀️ Sun Animation
         gsap.to(".wave-img", {
